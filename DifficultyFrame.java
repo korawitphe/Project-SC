@@ -40,9 +40,9 @@ public class DifficultyFrame extends JFrame {
         subtitleLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         //สร้างปุ่ม
-        JButton easyButton = createDifficultyButton("Easy");
-        JButton normalButton = createDifficultyButton("Normal");
-        JButton hardButton = createDifficultyButton("Hard");
+        JButton easyButton = createDifficultyButton("Easy                                                      >");
+        JButton normalButton = createDifficultyButton("Normal                                                  >");
+        JButton hardButton = createDifficultyButton("Hard                                                      >");
 
         //เอาทุกอันที่สร้างมาประกอบกัน
         mainPanel.add(Box.createVerticalStrut(20)); //เพิ่มช่องว่างแนวตั้ง 20
@@ -68,8 +68,8 @@ public class DifficultyFrame extends JFrame {
         button.setFont(new Font("Arial", Font.PLAIN, 14));
         button.setBackground(Color.WHITE);
         button.setFocusPainted(false); //ไว้ปิดกรอบตอนกดปุ่ม
-        button.setAlignmentX(Component.CENTER_ALIGNMENT);
-        button.setMaximumSize(new Dimension(300, 50)); //จำกัดหนาดปุ่ม
+        button.setAlignmentX(Component.CENTER_ALIGNMENT); //ทำให้ปุ่มอยู่ตรงกลาง
+        button.setMaximumSize(new Dimension(300, 50)); //จำกัดขนาดปุ่ม
         return button;
     }
 
